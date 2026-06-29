@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@reference "tailwindcss";
+
+@theme {
+  --color-maroon-50: #FDF2F4;
+  --color-maroon-100: #FCE7EB;
+  --color-maroon-200: #F9D0D9;
+  --color-maroon-300: #F4A9BA;
+  --color-maroon-400: #EC7A96;
+  --color-maroon-500: #DF4B6E;
+  --color-maroon-600: #C92B54;
+  --color-maroon-700: #A81E43;
+  --color-maroon-800: #800020;
+  --color-maroon-900: #5C0017;
+  --color-maroon-950: #3D000F;
+}
+
+body {
+  @apply bg-neutral-100 text-neutral-900 antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-neutral-300;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neutral-400;
+}
